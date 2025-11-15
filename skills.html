@@ -3,73 +3,61 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Skills — Your Name</title>
+  <title>Skills — Juvelyn Quibuyen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600,800&family=Rubik:wght@600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
-  <script defer src="js/script.js"></script>
 </head>
-<body>
-  <header class="site-header">
-    <div class="container header-grid">
-      <a class="brand" href="index.html">
-        <img src="images/avatar.jpg" alt="Your avatar" class="avatar">
-        <div>
-          <h1>Your Name</h1>
-          <p class="muted">Professional Title</p>
-        </div>
-      </a>
+<body class="dark-bg">
+  <header class="topbar" role="banner">
+    <div class="topbar-inner container">
+      <button id="menu-toggle-3" class="hamburger" aria-expanded="false" aria-controls="primary-nav-3" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
 
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html" class="active">Skills</a>
-        <a href="work-experience.html">Experience</a>
-        <a href="dashboard.html" class="cta">Dashboard</a>
+      <nav id="primary-nav-3" class="nav-centered" role="navigation">
+        <a class="nav-item" href="index.html">Home</a>
+        <a class="nav-item" href="about.html">About</a>
+        <a class="nav-item active" href="skills.html">Skills</a>
+        <a class="nav-item" href="work-experience.html">Experience</a>
       </nav>
     </div>
   </header>
 
-  <main class="container page">
-    <section class="card">
-      <h2>Skills</h2>
-      <p>Front-end, tooling, and soft skills — with confidence levels.</p>
+  <main>
+    <section class="page container content-appear">
+      <h1>Skills</h1>
+      <p class="lead">My core strengths and tools I use to help clients.</p>
 
       <div class="skill-list">
         <div class="skill">
-          <div class="skill-header">
-            <strong>HTML &amp; CSS</strong><span>95%</span>
-          </div>
+          <div class="skill-head"><strong>Administrative Support</strong><span>95%</span></div>
           <div class="progress" data-progress="95"><div class="progress-bar"></div></div>
         </div>
 
         <div class="skill">
-          <div class="skill-header">
-            <strong>JavaScript</strong><span>90%</span>
-          </div>
+          <div class="skill-head"><strong>Communication & Email Mgmt</strong><span>90%</span></div>
           <div class="progress" data-progress="90"><div class="progress-bar"></div></div>
         </div>
 
         <div class="skill">
-          <div class="skill-header">
-            <strong>React / Vue</strong><span>85%</span>
-          </div>
-          <div class="progress" data-progress="85"><div class="progress-bar"></div></div>
+          <div class="skill-head"><strong>Project Tools (Asana/Trello/Notion)</strong><span>88%</span></div>
+          <div class="progress" data-progress="88"><div class="progress-bar"></div></div>
         </div>
 
         <div class="skill">
-          <div class="skill-header">
-            <strong>Accessibility</strong><span>80%</span>
-          </div>
-          <div class="progress" data-progress="80"><div class="progress-bar"></div></div>
+          <div class="skill-head"><strong>Research & Summaries</strong><span>92%</span></div>
+          <div class="progress" data-progress="92"><div class="progress-bar"></div></div>
         </div>
       </div>
     </section>
+
+    <footer class="site-footer container content-appear">
+      <div class="footer-inner">
+        <p>© <span id="year-3"></span> Juvelyn Quibuyen</p>
+      </div>
+    </footer>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year-3"></span> Your Name</p>
-    </div>
-  </footer>
+  <script src="js/script.js" defer></script>
 </body>
 </html>
-

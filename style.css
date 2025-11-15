@@ -30,7 +30,7 @@ body::before {
     inset: 0;
 
     /* make it more transparent so floral shows */
-    background: rgba(255, 255, 255, 0.15); /* LOWER opacity = more floral */
+    background: rgba(255, 255, 255, 0.05); /* LOWER opacity = more floral */
     
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);

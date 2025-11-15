@@ -76,7 +76,7 @@ main, header, footer, .container, .content, .card, * {
 .fullscreen{min-height:calc(100vh - 84px);display:flex;align-items:center;position:relative;z-index:1;padding-bottom:20px}
 .hero-inner{display:grid;grid-template-columns:1fr 440px;gap:48px;align-items:center;padding:78px 0}
 .kicker{color:var(--muted);font-weight:700;letter-spacing:1px;margin:0 0 8px}
-.hero-title{font-family:"Rubik",sans-serif;font-weight:800;font-size:68px;margin:0;line-height:0.95;color:#d16c7d}
+.hero-title{font-family:"Rubik",sans-serif;font-weight:800;font-size:68px;margin:0;line-height:0.95;color:#BA1A51}
 .hero-title .glow{color:var(--text);text-shadow:0 4px 12px rgba(209,108,125,0.14)}
 .subtitle{color:var(--accent);font-weight:700;margin:10px 0 4px;font-size:20px}
 .location{color:var(--muted);margin:0 0 18px}

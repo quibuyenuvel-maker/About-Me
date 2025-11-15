@@ -7,6 +7,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Rubik:wght@600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <meta name="description" content="Juvelyn Quibuyen — General Virtual Assistant, Davao City. Administrative support, calendar & inbox mgmt, research, and project assistance." />
+  <style>
+    /* Hero portrait glow */
+    .portrait-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 380px;
+      margin: 0 auto;
+      cursor: grab;
+      z-index: 1;
+    }
+
+    .portrait-glow {
+      position: absolute;
+      left: -10%;
+      top: -10%;
+      width: 140%;
+      height: 140%;
+      border-radius: 22px;
+      mix-blend-mode: screen;
+      background: radial-gradient(closest-side, rgba(189,45,69,0.2), rgba(252,86,143,0.1), transparent 40%);
+      filter: blur(60px);
+      pointer-events: none;
+      z-index: 0;
+      transform: translateZ(0);
+    }
+  </style>
 </head>
 <body class="dark-bg">
 
@@ -65,7 +91,7 @@
           </ul>
         </div>
 
-        <!-- Right: Hero photo (replaced Juvelyn portrait) -->
+        <!-- Right: Hero photo with neon glow -->
         <aside class="hero-right content-appear delay-sm">
           <div class="portrait-wrap parallax" id="portraitWrap">
             <img src="images/myphoto.jpg" alt="Juvelyn Quibuyen" class="portrait" id="portraitImg">
@@ -116,7 +142,7 @@
       </div>
     </section>
 
-    <!-- Audio sample (optional) -->
+    <!-- Audio sample -->
     <section class="audio-sample container content-appear">
       <h3>Voice sample / Quick walkthrough</h3>
       <p class="muted">Add a short audio clip so clients can hear your tone.</p>

@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Juvelyn Quibuyen — General Virtual Assistant</title>
 
-  <!-- Font -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Rubik:wght@600;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css" />
+  <meta name="description" content="Juvelyn Quibuyen — General Virtual Assistant, Davao City. Admin support, inbox & calendar mgmt, research, and project assistance." />
 </head>
-
 <body class="dark-bg">
+
   <!-- Top navigation (centered) -->
   <header class="topbar" role="banner">
     <div class="topbar-inner container">
@@ -32,9 +33,17 @@
     </div>
   </header>
 
-  <!-- HERO: full-screen -->
+  <!-- Animated layered background + hero -->
   <main>
     <section class="hero fullscreen">
+      <!-- animated blobs / noise are pure CSS -->
+      <div class="bg-blobs" aria-hidden="true">
+        <div class="blob b1"></div>
+        <div class="blob b2"></div>
+        <div class="blob b3"></div>
+        <canvas id="particles"></canvas>
+      </div>
+
       <div class="hero-inner container grid">
         <div class="hero-left content-appear">
           <p class="kicker">Hello — I’m</p>
@@ -43,8 +52,7 @@
           <p class="location">Davao City, Philippines</p>
 
           <p class="lead">
-            I take care of the day-to-day so you can focus on what matters.
-            Administrative support, calendar & inbox management, research, and more.
+            I take care of the day-to-day so you can focus on what matters — admin support, calendar & inbox management, research, and project coordination.
           </p>
 
           <p class="hero-ctas">
@@ -60,16 +68,68 @@
         </div>
 
         <aside class="hero-right content-appear delay-sm">
-          <!-- Put a portrait / illustration in images/avatar-hero.jpg -->
-          <div class="portrait-wrap">
-            <img src="images/avatar-hero.jpg" alt="Juvelyn Quibuyen portrait" class="portrait">
+          <div class="portrait-wrap parallax" id="portraitWrap">
+            <img src="images/avatar-hero.jpg" alt="Juvelyn portrait" class="portrait" id="portraitImg">
             <div class="portrait-glow"></div>
           </div>
         </aside>
       </div>
     </section>
 
-    <!-- Optional: short features section -->
+    <!-- Projects / Episodes carousel -->
+    <section class="projects container content-appear">
+      <div class="projects-header">
+        <h3>Featured Tasks / Projects</h3>
+        <p class="muted">Quick examples of support I provide</p>
+      </div>
+
+      <div class="carousel" id="carousel">
+        <button class="car-prev" aria-label="Previous">‹</button>
+        <div class="car-track">
+          <!-- REPEAT these items or render from CMS -->
+          <article class="car-item">
+            <img src="images/project-1.jpg" alt="Project 1">
+            <div class="car-body">
+              <h4>Scheduling & Calendar Optimization</h4>
+              <p>Reduced calendar conflicts and automated reminders for a coaching business.</p>
+              <button class="open-modal" data-title="Scheduling & Calendar Optimization" data-desc="Automated bookings, reminders and client onboarding flows.">Details</button>
+            </div>
+          </article>
+
+          <article class="car-item">
+            <img src="images/project-2.jpg" alt="Project 2">
+            <div class="car-body">
+              <h4>Inbox Triage</h4>
+              <p>Organized email flows, set priority labels and canned responses saving hours weekly.</p>
+              <button class="open-modal" data-title="Inbox Triage" data-desc="Label rules, template responses, and daily summaries.">Details</button>
+            </div>
+          </article>
+
+          <article class="car-item">
+            <img src="images/project-3.jpg" alt="Project 3">
+            <div class="car-body">
+              <h4>Research & Report</h4>
+              <p>Market research and concise summaries for decision making and vendor selection.</p>
+              <button class="open-modal" data-title="Research & Report" data-desc="Executive summaries and recommended next steps.">Details</button>
+            </div>
+          </article>
+        </div>
+        <button class="car-next" aria-label="Next">›</button>
+      </div>
+    </section>
+
+    <!-- Optional audio sample (replace src) -->
+    <section class="audio-sample container content-appear">
+      <h3>Voice sample / Quick walkthrough</h3>
+      <p class="muted">Add a short audio clip so clients can hear your tone.</p>
+      <audio controls preload="none">
+        <!-- Replace with your mp3 hosted file -->
+        <source src="https://cdn.simplecast.com/audio-placeholder.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+      </audio>
+    </section>
+
+    <!-- features -->
     <section class="features container content-appear">
       <div class="features-grid">
         <article class="feature">
@@ -82,12 +142,11 @@
         </article>
         <article class="feature">
           <h3>Research & Reports</h3>
-          <p>Fast, clear summaries and actionable findings for decision making.</p>
+          <p>Clear summaries and actionable findings for decision making.</p>
         </article>
       </div>
     </section>
 
-    <!-- Footer -->
     <footer class="site-footer container content-appear">
       <div class="footer-inner">
         <p class="copyright">© <span id="year"></span> Juvelyn Quibuyen</p>
@@ -99,6 +158,15 @@
       </div>
     </footer>
   </main>
+
+  <!-- Modal placeholder -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-inner">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
 
   <script src="js/script.js" defer></script>
 </body>

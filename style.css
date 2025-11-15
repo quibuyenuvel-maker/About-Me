@@ -14,27 +14,30 @@ html,body{height:100%;margin:0;font-family:var(--mono);color:var(--text);-webkit
 a{color:inherit;text-decoration:none}
 .container{max-width:var(--container);margin:0 auto;padding:20px}
 
-/* --- layered soft floral background — UPDATED ONLY THIS PART --- */
+/* --- layered soft floral background + FROSTED GLASS EFFECT --- */
 body{
   background-color: var(--bg-1);
-  background-image: url('images/floralprint.jpg'); /* your repeating pattern */
-  background-repeat: repeat;        /* make the small image tile */
-  background-size: auto;            /* keep original size for crisp pattern */
-  background-position: top left;    /* natural tiling */
-  background-attachment: scroll;    /* avoids seams when scrolling */
+  background-image: url('images/floralprint.jpg');  /* repeating pattern */
+  background-repeat: repeat;
+  background-size: auto;      
+  background-position: top left;
+  background-attachment: scroll;
 
   position: relative;
   overflow-x: hidden;
 }
 
-/* Optional subtle overlay for readability */
+/* Frosted-glass blur layer */
 body::before{
   content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(255,255,255,0.3);
+  position: fixed;       /* ensures smooth glass on scroll */
+  top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(255, 255, 255, 0.55);   /* soft white frost */
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   pointer-events:none;
-  z-index:0;
+  z-index:-1;
 }
 
 /* particles canvas removed as it’s not needed for pastel theme */
@@ -115,7 +118,7 @@ body::before{
 .feature{background:rgba(255,255,255,0.6);padding:22px;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.1);transition:all .25s ease}
 .feature:hover{background:rgba(244,166,184,0.2)}
 .feature h3{margin:0 0 8px;color:var(--accent-2)}
-.feature p{color:rgba(59,59,59,0.9); margin:0; font-size:0.95rem; line-height:1.5;}
+.feature p{color:rgba(59,59,59,0.9); margin:0; font-size:0.95rem; line-height:1.5}
 
 /* --- footer removed --- */
 

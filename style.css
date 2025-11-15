@@ -2,12 +2,12 @@
 
 /* --- variables --- */
 :root{
-  --bg-1:#3C4E77;      /* dusty navy */
-  --bg-2:#0F1B3D;      /* deep midnight blue */
-  --text:#C7B4C3;      /* soft lavender-grey */
-  --muted:#6A86AC;     /* muted steel blue */
+  --bg-1:#244296;      /* dusty navy */
+  --bg-2:#81A3F7;      /* deep midnight blue */
+  --text:#EBD5EB;      /* soft lavender-grey */
+  --muted:#86B3C4;     /* muted steel blue */
 
-  --accent:#7A627C;    /* dusty plum */
+  --accent:#513752;    /* dusty plum */
   --accent-2:#C7B4C3;  /* lavender-grey highlight */
 
   --glass:rgba(255,255,255,0.04);

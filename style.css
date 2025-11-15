@@ -14,30 +14,35 @@ html,body{height:100%;margin:0;font-family:var(--mono);color:var(--text);-webkit
 a{color:inherit;text-decoration:none}
 .container{max-width:var(--container);margin:0 auto;padding:20px}
 
-/* --- layered soft floral background + FROSTED GLASS EFFECT --- */
-body{
-  background-color: var(--bg-1);
-  background-image: url('images/floralprint.jpg');  /* repeating pattern */
-  background-repeat: repeat;
-  background-size: auto;      
-  background-position: top left;
-  background-attachment: scroll;
-
-  position: relative;
-  overflow-x: hidden;
+body {
+    background-image: url("images/floralprint.jpg");
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: top left;
+    background-color: #ffffff;
+    position: relative;
 }
 
-/* Frosted-glass blur layer */
-body::before{
-  content:"";
-  position: fixed;       /* ensures smooth glass on scroll */
-  top:0; left:0;
-  width:100%; height:100%;
-  background: rgba(255, 255, 255, 0.55);   /* soft white frost */
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  pointer-events:none;
-  z-index:-1;
+/* Frosted glass that allows background to show */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    /* make it more transparent so floral shows */
+    background: rgba(255, 255, 255, 0.35); /* LOWER opacity = more floral */
+    
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    pointer-events: none;
+    z-index: 0; /* sits above background but below content */
+}
+
+/* ensure all content STAYS ABOVE the frost*/
+main, header, footer, .container, .content, .card, * {
+    position: relative;
+    z-index: 1;
 }
 
 /* particles canvas removed as it’s not needed for pastel theme */

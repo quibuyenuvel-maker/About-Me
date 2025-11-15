@@ -14,13 +14,15 @@ html,body{height:100%;margin:0;font-family:var(--mono);color:var(--text);-webkit
 a{color:inherit;text-decoration:none}
 .container{max-width:var(--container);margin:0 auto;padding:20px}
 
-/* --- layered soft floral background --- */
+/* --- layered soft floral background — UPDATED ONLY THIS PART --- */
 body{
   background-color: var(--bg-1);
-  background-image: url('images/floral-bg.png'); /* replace with your uploaded floral PNG */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-image: url('images/floralprint.jpg'); /* your repeating pattern */
+  background-repeat: repeat;        /* make the small image tile */
+  background-size: auto;            /* keep original size for crisp pattern */
+  background-position: top left;    /* natural tiling */
+  background-attachment: scroll;    /* avoids seams when scrolling */
+
   position: relative;
   overflow-x: hidden;
 }

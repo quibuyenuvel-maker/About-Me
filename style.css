@@ -3,7 +3,7 @@
 /* --- variables --- */
 :root{
   --bg-1:#0b0b0e; --bg-2:#0f0f12; --text:#e8eef6; --muted:#9aa0a6;
-  --accent:#ff4da6; --accent-2:#6ef0d3;
+  --accent:#BD2D45; --accent-2:#FC568F;
   --glass:rgba(255,255,255,0.03); --container:1100px; --radius:12px;
   --mono:"Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial;
 }

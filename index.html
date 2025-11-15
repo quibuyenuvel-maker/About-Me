@@ -4,12 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Juvelyn Quibuyen — General Virtual Assistant</title>
-
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Rubik:wght@600;800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/styles.css" />
-  <meta name="description" content="Juvelyn Quibuyen — General Virtual Assistant, Davao City. Admin support, inbox & calendar mgmt, research, and project assistance." />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Juvelyn Quibuyen — General Virtual Assistant, Davao City. Administrative support, calendar & inbox mgmt, research, and project assistance." />
 </head>
 <body class="dark-bg">
 
@@ -33,10 +30,9 @@
     </div>
   </header>
 
-  <!-- Animated layered background + hero -->
   <main>
+    <!-- HERO -->
     <section class="hero fullscreen">
-      <!-- animated blobs / noise are pure CSS -->
       <div class="bg-blobs" aria-hidden="true">
         <div class="blob b1"></div>
         <div class="blob b2"></div>
@@ -52,7 +48,8 @@
           <p class="location">Davao City, Philippines</p>
 
           <p class="lead">
-            I take care of the day-to-day so you can focus on what matters — admin support, calendar & inbox management, research, and project coordination.
+            I take care of the day-to-day so you can focus on what matters.
+            Administrative support, calendar & inbox management, research, and project coordination.
           </p>
 
           <p class="hero-ctas">
@@ -76,7 +73,7 @@
       </div>
     </section>
 
-    <!-- Projects / Episodes carousel -->
+    <!-- Projects carousel (keeps simple content you provided) -->
     <section class="projects container content-appear">
       <div class="projects-header">
         <h3>Featured Tasks / Projects</h3>
@@ -86,9 +83,8 @@
       <div class="carousel" id="carousel">
         <button class="car-prev" aria-label="Previous">‹</button>
         <div class="car-track">
-          <!-- REPEAT these items or render from CMS -->
           <article class="car-item">
-            <img src="images/project-1.jpg" alt="Project 1">
+            <img src="images/project-1.jpg" alt="Scheduling project">
             <div class="car-body">
               <h4>Scheduling & Calendar Optimization</h4>
               <p>Reduced calendar conflicts and automated reminders for a coaching business.</p>
@@ -97,16 +93,16 @@
           </article>
 
           <article class="car-item">
-            <img src="images/project-2.jpg" alt="Project 2">
+            <img src="images/project-2.jpg" alt="Inbox triage">
             <div class="car-body">
               <h4>Inbox Triage</h4>
-              <p>Organized email flows, set priority labels and canned responses saving hours weekly.</p>
+              <p>Organized email flows, set priority labels and canned responses to save hours weekly.</p>
               <button class="open-modal" data-title="Inbox Triage" data-desc="Label rules, template responses, and daily summaries.">Details</button>
             </div>
           </article>
 
           <article class="car-item">
-            <img src="images/project-3.jpg" alt="Project 3">
+            <img src="images/project-3.jpg" alt="Research sample">
             <div class="car-body">
               <h4>Research & Report</h4>
               <p>Market research and concise summaries for decision making and vendor selection.</p>
@@ -118,18 +114,18 @@
       </div>
     </section>
 
-    <!-- Optional audio sample (replace src) -->
+    <!-- Audio sample (optional) -->
     <section class="audio-sample container content-appear">
       <h3>Voice sample / Quick walkthrough</h3>
       <p class="muted">Add a short audio clip so clients can hear your tone.</p>
       <audio controls preload="none">
-        <!-- Replace with your mp3 hosted file -->
+        <!-- Replace with your audio file or remove if not needed -->
         <source src="https://cdn.simplecast.com/audio-placeholder.mp3" type="audio/mpeg">
         Your browser does not support audio.
       </audio>
     </section>
 
-    <!-- features -->
+    <!-- Features (keeps your short feature content) -->
     <section class="features container content-appear">
       <div class="features-grid">
         <article class="feature">
@@ -159,7 +155,6 @@
     </footer>
   </main>
 
-  <!-- Modal placeholder -->
   <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
     <div class="modal-inner">
       <button class="modal-close" aria-label="Close">✕</button>
@@ -168,6 +163,6 @@
     </div>
   </div>
 
-  <script src="js/script.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

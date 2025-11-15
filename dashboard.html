@@ -1,1 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard — Your Name</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="index.html">
+        <img src="images/avatar.jpg" alt="Your avatar" class="avatar">
+        <div>
+          <h1>Your Name</h1>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="work-experience.html">Experience</a>
+        <a href="dashboard.html" class="active cta">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <section class="card grid-2">
+      <div>
+        <h2>Live dashboard</h2>
+        <p>Interactive small dashboard to showcase metrics or project statuses.</p>
+
+        <div class="dash-metrics">
+          <div class="metric">
+            <h3 id="projects-count">0</h3>
+            <p>Projects</p>
+          </div>
+          <div class="metric">
+            <h3 id="clients-count">0</h3>
+            <p>Clients</p>
+          </div>
+          <div class="metric">
+            <h3 id="hours-count">0</h3>
+            <p>Hours logged</p>
+          </div>
+        </div>
+
+        <p>
+          <button id="simulate" class="btn">Simulate data</button>
+        </p>
+      </div>
+
+      <div>
+        <h3>Recent projects</h3>
+        <ul id="projects-list" class="projects-list">
+          <!-- JavaScript will populate -->
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year-5"></span> Your Name</p>
+    </div>
+  </footer>
+</body>
+</html>
+
 

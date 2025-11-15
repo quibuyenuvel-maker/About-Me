@@ -3,64 +3,61 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>About — Your Name</title>
+  <title>About — Juvelyn Quibuyen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Rubik:wght@600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
-  <script defer src="js/script.js"></script>
 </head>
-<body>
-  <header class="site-header">
-    <div class="container header-grid">
-      <a class="brand" href="index.html">
-        <img src="images/avatar.jpg" alt="Your avatar" class="avatar">
-        <div>
-          <h1>Your Name</h1>
-          <p class="muted">Professional Title</p>
-        </div>
-      </a>
+<body class="dark-bg">
+  <header class="topbar" role="banner">
+    <div class="topbar-inner container">
+      <button id="menu-toggle-2" class="hamburger" aria-expanded="false" aria-controls="primary-nav-2" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
 
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html" class="active">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="work-experience.html">Experience</a>
-        <a href="dashboard.html" class="cta">Dashboard</a>
+      <nav id="primary-nav-2" class="nav-centered" role="navigation" aria-label="Primary">
+        <a class="nav-item" href="index.html">Home</a>
+        <a class="nav-item active" href="about.html">About</a>
+        <a class="nav-item" href="skills.html">Skills</a>
+        <a class="nav-item" href="work-experience.html">Experience</a>
       </nav>
     </div>
   </header>
 
-  <main class="container page">
-    <article class="card">
-      <h2>About me</h2>
-      <p>
-        Write a concise, human-friendly bio here. Example:
-        I’m a web developer and UX-minded problem solver with X years of experience building
-        websites and web apps. I focus on accessible, maintainable code and clean interfaces.
-      </p>
+  <main>
+    <section class="page container content-appear">
+      <div class="page-grid">
+        <div class="page-left">
+          <h1>About — Juvelyn Quibuyen</h1>
+          <p class="lead">
+            I'm a dedicated General Virtual Assistant based in Davao City. I partner with busy professionals and small teams to
+            streamline workflows, handle admin tasks with care, and free up time for higher-level work.
+          </p>
 
-      <h3>Background</h3>
-      <p>
-        Briefly cover your education, top achievements, and what drives you professionally.
-      </p>
+          <h3>How I work</h3>
+          <ul>
+            <li>Clear communication and reliable delivery</li>
+            <li>Tools: Google Workspace, Trello/Asana, Slack, Notion</li>
+            <li>Confidentiality & attention to detail</li>
+          </ul>
+        </div>
 
-      <h3>What I bring</h3>
-      <ul>
-        <li>Carefully crafted UI & UX</li>
-        <li>Reliable, well-tested front-end code</li>
-        <li>Cross-team collaboration and communication</li>
-      </ul>
+        <aside class="page-right">
+          <div class="card portrait-card">
+            <img src="images/avatar.jpg" alt="Juvelyn portrait" class="portrait-small">
+            <p class="muted">Juvelyn Quibuyen</p>
+            <p class="muted small">General Virtual Assistant — Davao City, Philippines</p>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-      <p class="actions">
-        <a class="btn" href="skills.html">See my skills</a>
-        <a class="btn ghost" href="work-experience.html">View experience</a>
-      </p>
-    </article>
+    <footer class="site-footer container content-appear">
+      <div class="footer-inner">
+        <p>© <span id="year-2"></span> Juvelyn Quibuyen</p>
+      </div>
+    </footer>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year-2"></span> Your Name</p>
-    </div>
-  </footer>
+  <script src="js/script.js" defer></script>
 </body>
 </html>
-

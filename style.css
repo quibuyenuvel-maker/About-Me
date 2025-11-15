@@ -2,10 +2,10 @@
 
 /* --- variables --- */
 :root{
-  --bg-1:#244296;      /* dusty navy */
-  --bg-2:#81A3F7;      /* deep midnight blue */
+  --bg-1:#08235E;      /* dusty navy */
+  --bg-2:#C9D9FF;      /* deep midnight blue */
   --text:#EBD5EB;      /* soft lavender-grey */
-  --muted:#86B3C4;     /* muted steel blue */
+  --muted:#B1DEF2;     /* muted steel blue */
 
   --accent:#513752;    /* dusty plum */
   --accent-2:#C7B4C3;  /* lavender-grey highlight */
@@ -45,7 +45,7 @@ body::before {
     position: fixed;
     inset: 0;
 
-    background: rgba(15, 27, 61, 0.35);
+    background: rgba(15, 27, 61, 0.05);
 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);

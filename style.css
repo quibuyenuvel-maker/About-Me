@@ -31,7 +31,7 @@ body.dark-bg{
 @keyframes blob2{0%{transform:translateY(0) translateX(0)}50%{transform:translateY(-30px) translateX(-20px)}100%{transform:translateY(0) translateX(0)}}
 @keyframes blob3{0%{transform:translateY(0) translateX(0)}50%{transform:translateY(-25px) translateX(30px)}100%{transform:translateY(0) translateX(0)}}
 
-/* particles canvas sits above blobs */
+/* particles canvas */
 #particles{position:absolute;inset:0;z-index:0;pointer-events:none}
 
 /* --- topbar --- */
@@ -107,7 +107,7 @@ body.dark-bg{
 .feature{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:22px;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.45);transition:all .25s ease}
 .feature:hover{background:rgba(252,86,143,0.1)}
 .feature h3{margin:0 0 8px;color:var(--accent-2)}
-.feature p{color:var(--muted);margin:0}
+.feature p{color:rgba(232,238,246,0.9); margin:0; font-size:0.95rem; line-height:1.5;}
 
 /* --- page layout --- */
 .page{padding:60px 0}

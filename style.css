@@ -2,13 +2,13 @@
 
 /* --- variables --- */
 :root{
-  --bg-1:#08235E;      /* dusty navy */
-  --bg-2:#C9D9FF;      /* deep midnight blue */
+  --bg-1:#C9D9FF;      /* dusty navy */
+  --bg-2:#274A96;      /* deep midnight blue */
   --text:#EBD5EB;      /* soft lavender-grey */
   --muted:#B1DEF2;     /* muted steel blue */
 
   --accent:#FCFCAC;    /* dusty plum */
-  --accent-2:#C7B4C3;  /* lavender-grey highlight */
+  --accent-2:#83659E;  /* lavender-grey highlight */
 
   --glass:rgba(255,255,255,0.04);
   --container:1100px;

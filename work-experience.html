@@ -3,68 +3,56 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Experience — Your Name</title>
+  <title>Experience — Juvelyn Quibuyen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600,800&family=Rubik:wght@600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
-  <script defer src="js/script.js"></script>
 </head>
-<body>
-  <header class="site-header">
-    <div class="container header-grid">
-      <a class="brand" href="index.html">
-        <img src="images/avatar.jpg" alt="Your avatar" class="avatar">
-        <div>
-          <h1>Your Name</h1>
-          <p class="muted">Professional Title</p>
-        </div>
-      </a>
+<body class="dark-bg">
+  <header class="topbar" role="banner">
+    <div class="topbar-inner container">
+      <button id="menu-toggle-4" class="hamburger" aria-expanded="false" aria-controls="primary-nav-4" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
 
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="work-experience.html" class="active">Experience</a>
-        <a href="dashboard.html" class="cta">Dashboard</a>
+      <nav id="primary-nav-4" class="nav-centered" role="navigation">
+        <a class="nav-item" href="index.html">Home</a>
+        <a class="nav-item" href="about.html">About</a>
+        <a class="nav-item" href="skills.html">Skills</a>
+        <a class="nav-item active" href="work-experience.html">Experience</a>
       </nav>
     </div>
   </header>
 
-  <main class="container page">
-    <section class="card">
-      <h2>Work experience</h2>
+  <main>
+    <section class="page container content-appear">
+      <h1>Work Experience</h1>
 
       <div class="timeline">
         <div class="timeline-item">
-          <div class="timeline-date">2022 — Present</div>
-          <div class="timeline-body">
-            <h4>Senior Frontend Developer — Company A</h4>
-            <p>Short description of responsibilities and achievements. Focus on measurable impacts (e.g., improved load time by 30%).</p>
+          <time>2022 — Present</time>
+          <div>
+            <h4>Virtual Assistant — Clients (Freelance)</h4>
+            <p>Ongoing client support: inbox management, scheduling, documentation, light bookkeeping, and task coordination.</p>
           </div>
         </div>
 
         <div class="timeline-item">
-          <div class="timeline-date">2019 — 2022</div>
-          <div class="timeline-body">
-            <h4>Frontend Developer — Company B</h4>
-            <p>Worked on product X; led feature Y; collaborated with design and backend teams.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-date">2017 — 2019</div>
-          <div class="timeline-body">
-            <h4>Junior Developer — Company C</h4>
-            <p>Built components and maintained codebases. Learned engineering best practices and testing.</p>
+          <time>2019 — 2022</time>
+          <div>
+            <h4>Administrative Support — Small Business</h4>
+            <p>Managed operations and customer communications, improved response workflows and reporting cadence.</p>
           </div>
         </div>
       </div>
     </section>
+
+    <footer class="site-footer container content-appear">
+      <div class="footer-inner">
+        <p>© <span id="year-4"></span> Juvelyn Quibuyen</p>
+      </div>
+    </footer>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year-4"></span> Your Name</p>
-    </div>
-  </footer>
+  <script src="js/script.js" defer></script>
 </body>
 </html>
-

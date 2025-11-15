@@ -6,7 +6,7 @@
   <title>Juvelyn Quibuyen — General Virtual Assistant</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Rubik:wght@600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="Juvelyn Quibuyen — General Virtual Assistant, Davao City. Administrative support, calendar & inbox mgmt, research, and project assistance." />
+  <meta name="description" content="Juvelyn Quibuyen — General Virtual Assistant, Davao City. Administrative support, CRM & workflow automations, calendar & inbox management, research, and project coordination." />
   <style>
     /* Hero portrait glow */
     .portrait-wrap {
@@ -17,7 +17,6 @@
       cursor: grab;
       z-index: 1;
     }
-
     .portrait-glow {
       position: absolute;
       left: -10%;
@@ -36,20 +35,18 @@
 </head>
 <body class="dark-bg">
 
-  <!-- Top navigation (centered) -->
+  <!-- Top navigation -->
   <header class="topbar" role="banner">
     <div class="topbar-inner container">
       <button id="menu-toggle" class="hamburger" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
-
       <nav id="primary-nav" class="nav-centered" role="navigation" aria-label="Primary">
         <a class="nav-item active" href="index.html">Home</a>
         <a class="nav-item" href="about.html">About</a>
         <a class="nav-item" href="skills.html">Skills</a>
         <a class="nav-item" href="work-experience.html">Experience</a>
       </nav>
-
       <div class="brand-small" aria-hidden="true">
         <img src="images/avatar.jpg" alt="" class="brand-avatar">
       </div>
@@ -75,9 +72,8 @@
           <p class="location">Davao City, Philippines</p>
 
           <p class="lead">
-            I help businesses stay organized and efficient by handling administrative tasks, client communications, and CRM automations. 
-            From managing emails and calendars to coordinating projects and automating workflows, I ensure daily operations run smoothly 
-            so you can focus on growing your business.
+            I help businesses stay organized and efficient through administrative support, client communications, and CRM & workflow automations.  
+            From managing emails and calendars to coordinating projects, I ensure daily operations run smoothly so you can focus on growth.
           </p>
 
           <p class="hero-ctas">
@@ -86,13 +82,13 @@
           </p>
 
           <ul class="mini-stats">
-            <li><strong>3+</strong><span>Years</span></li>
+            <li><strong>4+</strong><span>Years</span></li>
             <li><strong>40+</strong><span>Clients</span></li>
             <li><strong>100+</strong><span>Tasks</span></li>
           </ul>
         </div>
 
-        <!-- Right: Hero photo with neon glow -->
+        <!-- Right: Hero photo -->
         <aside class="hero-right content-appear delay-sm">
           <div class="portrait-wrap parallax" id="portraitWrap">
             <img src="images/myphoto.jpg" alt="Juvelyn Quibuyen" class="portrait" id="portraitImg">
@@ -117,7 +113,7 @@
             <div class="car-body">
               <h4>Scheduling & Calendar Optimization</h4>
               <p>Reduced calendar conflicts and automated reminders for a coaching business.</p>
-              <button class="open-modal" data-title="Scheduling & Calendar Optimization" data-desc="Automated bookings, reminders and client onboarding flows.">Details</button>
+              <button class="open-modal" data-title="Scheduling & Calendar Optimization" data-desc="Automated bookings, reminders, and client onboarding flows.">Details</button>
             </div>
           </article>
 
@@ -125,17 +121,17 @@
             <img src="images/project-2.jpg" alt="Inbox triage">
             <div class="car-body">
               <h4>Inbox Triage</h4>
-              <p>Organized email flows, set priority labels and canned responses to save hours weekly.</p>
+              <p>Organized email flows, set priority labels, and created canned responses to save hours weekly.</p>
               <button class="open-modal" data-title="Inbox Triage" data-desc="Label rules, template responses, and daily summaries.">Details</button>
             </div>
           </article>
 
           <article class="car-item">
-            <img src="images/project-3.jpg" alt="Research sample">
+            <img src="images/project-3.jpg" alt="CRM Automation">
             <div class="car-body">
               <h4>CRM & Workflow Automation</h4>
-              <p>Organize client information, track communications, and automate follow-ups so nothing falls through the cracks.</p>
-              <button class="open-modal" data-title="Research & Report" data-desc="Executive summaries and recommended next steps.">Details</button>
+              <p>Organized client information, tracked communications, and automated follow-ups to ensure nothing falls through the cracks.</p>
+              <button class="open-modal" data-title="CRM & Workflow Automation" data-desc="Automated client data updates, reminders, and workflow optimizations using Zapier and CRM tools.">Details</button>
             </div>
           </article>
         </div>
@@ -162,7 +158,7 @@
         </article>
         <article class="feature">
           <h3>Project Support</h3>
-          <p>Task tracking, documentation, onboarding support for remote teams.</p>
+          <p>Task tracking, documentation, and onboarding support for remote teams.</p>
         </article>
         <article class="feature">
           <h3>Research & Reports</h3>
@@ -193,5 +189,8 @@
   </div>
 
   <script src="script.js" defer></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

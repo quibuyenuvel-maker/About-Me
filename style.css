@@ -136,17 +136,17 @@ main, header, footer, .container, .content, .card, * {
   font-family:"Inter", sans-serif;
   font-weight:800;font-size:68px;
   margin:0;line-height:0.95;
-  color:#15152B;
+  color:#353557;
 }
 .hero-title .glow{
   color:#636E91;
   text-shadow:none;
 }
 .subtitle{
-  color:6B1940;font-weight:700;margin:10px 0 4px;font-size:20px
+  color:#5C1334;font-weight:700;margin:10px 0 4px;font-size:20px
 }
 .location{color:var(--muted);margin:0 0 18px}
-.lead{color:rgba(199,180,195,0.9);max-width:720px;font-size:18px}
+.lead{color:#450F1F;max-width:720px;font-size:18px}
 
 /* ctas */
 .hero-ctas{margin-top:18px}

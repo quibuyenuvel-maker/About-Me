@@ -157,12 +157,12 @@ main, header, footer, .container, .content, .card, * {
 }
 .btn-primary{
   background: var(--accent);
-  color:#09173D;box-shadow:0 8px 28px rgba(122,98,124,0.25)
+  color:#C6CEF5;box-shadow:0 8px 28px rgba(122,98,124,0.25)
 }
 .btn-primary:hover{transform:translateY(-2px)}
 .btn-ghost{
-  background:transparent;border:1px solid rgba(199,180,195,0.4);
-  color:var(--text);margin-left:12px
+  background:transparent;border:1px solid var(--accent);
+  color:#804D77;margin-left:12px
 }
 .btn-ghost:hover{
   background:rgba(122,98,124,0.25);color:var(--accent-2)

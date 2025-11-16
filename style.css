@@ -242,7 +242,7 @@ main, header, footer, .container, .content, .card, * {
 
 /* --- carousel --- */
 .projects-header h2 {
-    color: var(--text); /* soft lavender-grey for readability */
+    color:#631D3D; /* dark purple for readability */
     font-weight: 700;
 }
 .projects{padding:42px 0}
@@ -279,7 +279,7 @@ main, header, footer, .container, .content, .card, * {
 
 /* --- audio --- */
 .audio-sample h2 {
-    color: var(--text); /* same palette variable */
+    color:#631D3D; /* same palette variable */
     font-weight: 700;
 }
 .audio-sample{padding:24px 0;text-align:center}

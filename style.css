@@ -237,6 +237,21 @@ main, header, footer, .container, .content, .card, * {
 }
 .mini-stats strong{display:block;font-size:18px;color:var(--text)}
 
+/* Section headings */
+.projects-header h3,
+.audio-sample h3 {
+    color: var(--text);        /* soft lavender-grey for readability */
+    font-weight: 700;           /* bold for emphasis */
+    font-size: 28px;            /* adjust size as needed */
+    margin-bottom: 6px;
+}
+
+/* Optional: subtext / muted paragraphs in sections */
+.projects-header p,
+.audio-sample p {
+    color: var(--muted);        /* muted steel blue from palette */
+}
+
 /* --- carousel --- */
 .projects{padding:42px 0}
 .projects-header{

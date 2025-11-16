@@ -3,12 +3,12 @@
 /* --- variables --- */
 :root{
   --bg-1:#C9D9FF;      /* dusty navy */
-  --bg-2:#274A96;      /* deep midnight blue */
+  --bg-2:#131299;      /* deep midnight blue */
   --text:#EBD5EB;      /* soft lavender-grey */
   --muted:#B1DEF2;     /* muted steel blue */
 
-  --accent:#FCFCAC;    /* dusty plum */
-  --accent-2:#83659E;  /* lavender-grey highlight */
+  --accent:#0F327A;    /* dusty plum */
+  --accent-2:#2A1538;  /* lavender-grey highlight */
 
   --glass:rgba(255,255,255,0.04);
   --container:1100px;
@@ -136,14 +136,14 @@ main, header, footer, .container, .content, .card, * {
   font-family:"Inter", sans-serif;
   font-weight:800;font-size:68px;
   margin:0;line-height:0.95;
-  color:#FFF1B8;
+  color:#15152B;
 }
 .hero-title .glow{
-  color:#FFF1B8;
+  color:#636E91;
   text-shadow:none;
 }
 .subtitle{
-  color:var(--accent);font-weight:700;margin:10px 0 4px;font-size:20px
+  color:6B1940;font-weight:700;margin:10px 0 4px;font-size:20px
 }
 .location{color:var(--muted);margin:0 0 18px}
 .lead{color:rgba(199,180,195,0.9);max-width:720px;font-size:18px}

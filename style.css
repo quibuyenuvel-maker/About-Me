@@ -97,12 +97,12 @@ main, header, footer, .container, .content, .card, * {
   box-shadow:0 6px 18px rgba(0,0,0,0.25)
 }
 .nav-item:hover{
-  transform:translateY(-2px);color:var(--text);
+  transform:translateY(-2px);color:#D62065;
   background:#DE789E;
 }
 .nav-item.active{
   color:#FAE8FF;
-  background:#A7B7D9;
+  background:#CF6989;
   box-shadow:0 10px 34px rgba(122,98,124,0.25)
 }
 .nav-item.active::after{

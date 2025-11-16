@@ -240,7 +240,7 @@ main, header, footer, .container, .content, .card, * {
 /* Section headings */
 .projects-header h3,
 .audio-sample h3 {
-    color: var(--text);        /* soft lavender-grey for readability */
+    color:#BD3961;        /* soft lavender-grey for readability */
     font-weight: 700;           /* bold for emphasis */
     font-size: 28px;            /* adjust size as needed */
     margin-bottom: 6px;
@@ -355,5 +355,5 @@ main, header, footer, .container, .content, .card, * {
 }
 
 /* small utilities */
-.muted{color:var(--muted)}
+.muted{color:#BD3961}
 .small{font-size:13px}

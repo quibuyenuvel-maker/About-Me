@@ -89,26 +89,42 @@ main, header, footer, .container, .content, .card, * {
 .nav-centered{
   display:flex;gap:18px;align-items:center;justify-content:center;flex-wrap:wrap
 }
-.nav-item{
-  display:inline-block;padding:14px 26px;border-radius:14px;
-  background:rgba(212,70,110,0.45);
-  font-weight:700;font-size:18px;color:#FAE8FF;
-  position:relative;transition:all .22s ease;
-  box-shadow:0 6px 18px rgba(0,0,0,0.25)
+/* --- topbar nav buttons --- */
+.nav-item {
+  display: inline-block;
+  padding: 14px 26px;
+  border-radius: 14px;
+  background: rgba(33,90,150,0.45); /* var(--accent) */
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--bg-1); /* text on buttons */
+  position: relative;
+  transition: all 0.22s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
 }
-.nav-item:hover{
-  transform:translateY(-2px);color:#D62065;
-  background:#DE789E;
+
+.nav-item:hover {
+  transform: translateY(-2px);
+  color: var(--bg-1);
+  background: rgba(43,54,94,0.6); /* var(--accent-2) */
 }
-.nav-item.active{
-  color:#FAE8FF;
-  background:#CF6989;
-  box-shadow:0 10px 34px rgba(122,98,124,0.25)
-}
-.nav-item.active::after{
-  content:"";position:absolute;left:50%;transform:translateX(-50%);
-  bottom:-12px;width:46px;height:6px;border-radius:4px;
+
+.nav-item.active {
+  color: var(--bg-1);
   background: var(--accent);
+  box-shadow: 0 10px 34px rgba(33,90,150,0.25);
+}
+
+.nav-item.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -12px;
+  width: 46px;
+  height: 6px;
+  border-radius: 4px;
+  background: var(--accent-2);
 }
 
 /* brand small */

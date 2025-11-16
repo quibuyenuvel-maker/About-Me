@@ -88,26 +88,83 @@ main, header, footer, .container, .content, .card, * {
 /* nav */
 .nav-centered{
   display:flex;gap:18px;align-items:center;justify-content:center;flex-wrap:wrap
-}
 .nav-item{
-  display:inline-block;padding:14px 26px;border-radius:14px;
-  background:rgba(212,70,110,0.45);
-  font-weight:700;font-size:18px;color:#FAE8FF;
-  position:relative;transition:all .22s ease;
-  box-shadow:0 6px 18px rgba(0,0,0,0.25)
+  display:inline-block;
+  padding:14px 26px;
+  border-radius:14px;
+
+  /* ORIGINAL background kept — gloss added on top */
+  background:
+    linear-gradient(
+      rgba(255,255,255,0.30),
+      rgba(255,255,255,0.08) 40%,
+      rgba(0,0,0,0.15) 100%
+    ),
+    rgba(212,70,110,0.45);
+
+  font-weight:700;
+  font-size:18px;
+  color:#FAE8FF;
+
+  position:relative;
+  transition:all .22s ease;
+
+  /* EMBOSSED effect added */
+  box-shadow:
+    inset 2px 2px 6px rgba(255,255,255,0.45),   /* highlight */
+    inset -2px -2px 6px rgba(0,0,0,0.25),       /* depth */
+    0 6px 18px rgba(0,0,0,0.25);                /* your original */
 }
+
 .nav-item:hover{
-  transform:translateY(-2px);color:var(--text);
-  background:#DE789E;
+  transform:translateY(-2px);
+  color:var(--text);
+
+  /* use your SAME hover background + gloss */
+  background:
+    linear-gradient(
+      rgba(255,255,255,0.40),
+      rgba(255,255,255,0.15) 40%,
+      rgba(0,0,0,0.20) 100%
+    ),
+    #DE789E;
+
+  /* maintain glossy + embossed feel on hover */
+  box-shadow:
+    inset 1px 1px 4px rgba(255,255,255,0.50),
+    inset -1px -1px 4px rgba(0,0,0,0.25),
+    0 10px 22px rgba(0,0,0,0.30);
 }
+
 .nav-item.active{
   color:#FAE8FF;
-  background:#A7B7D9;
-  box-shadow:0 10px 34px rgba(122,98,124,0.25)
+
+  /* original active background kept + gloss */
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.20),
+      rgba(255,255,255,0.12) 60%
+    ),
+    #CF6989;
+
+  /* pressed/embossed active look */
+  box-shadow:
+    inset -2px -2px 6px rgba(255,255,255,0.30),
+    inset 2px 2px 6px rgba(0,0,0,0.30),
+    0 10px 34px rgba(122,98,124,0.25);
 }
+
 .nav-item.active::after{
-  content:"";position:absolute;left:50%;transform:translateX(-50%);
-  bottom:-12px;width:46px;height:6px;border-radius:4px;
+  content:"";
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:-12px;
+  width:46px;
+  height:6px;
+  border-radius:4px;
+
+  /* unchanged */
   background: var(--accent);
 }
 

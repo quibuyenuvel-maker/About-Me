@@ -226,7 +226,10 @@ main, header, footer, .container, .content, .card, * {
   background: rgba(122,98,124,0.22);
   filter:blur(40px);pointer-events:none;transform:translateZ(0)
 }
-
+.projects-header h2 {
+    color: var(--text); /* soft lavender-grey for readability */
+    font-weight: 700;
+}
 /* --- stats --- */
 .mini-stats{
   display:flex;gap:12px;margin-top:20px;list-style:none;padding:0
@@ -238,6 +241,10 @@ main, header, footer, .container, .content, .card, * {
 .mini-stats strong{display:block;font-size:18px;color:var(--text)}
 
 /* --- carousel --- */
+.projects-header h2 {
+    color: var(--text); /* soft lavender-grey for readability */
+    font-weight: 700;
+}
 .projects{padding:42px 0}
 .projects-header{
   display:flex;flex-direction:column;gap:6px;margin-bottom:12px;text-align:center
@@ -271,6 +278,10 @@ main, header, footer, .container, .content, .card, * {
 }
 
 /* --- audio --- */
+.audio-sample h2 {
+    color: var(--text); /* same palette variable */
+    font-weight: 700;
+}
 .audio-sample{padding:24px 0;text-align:center}
 .audio-sample audio{
   width:100%;max-width:600px;border-radius:8px;

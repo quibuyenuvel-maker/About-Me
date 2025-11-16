@@ -129,7 +129,7 @@ main, header, footer, .container, .content, .card, * {
   display:grid;grid-template-columns:1fr 440px;gap:48px;
   align-items:center;padding:78px 0;
 }
-.kicker{color:var(--muted);font-weight:700;letter-spacing:1px;margin:0 0 8px}
+.kicker{color:#A1183D;font-weight:700;letter-spacing:1px;margin:0 0 8px}
 
 /* UPDATED: font-family Inter + new color */
 .hero-title{
@@ -145,8 +145,8 @@ main, header, footer, .container, .content, .card, * {
 .subtitle{
   color:#5C1334;font-weight:700;margin:10px 0 4px;font-size:20px
 }
-.location{color:var(--muted);margin:0 0 18px}
-.lead{color:#450F1F;max-width:720px;font-size:18px}
+.location{color:#A1183D;margin:0 0 18px}
+.lead{color:#78324A;max-width:720px;font-size:18px}
 
 /* ctas */
 .hero-ctas{margin-top:18px}
